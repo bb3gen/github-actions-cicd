@@ -15,7 +15,7 @@ jobs:
     needs: [build_test]
     runs-on: ubuntu-latest
     environment:
-      name: stating
+      name: staging
     steps:
       - run: echo deploying to staging
       - run: echo using my secret for staging - ${{ secrets.MY_SECRET }}
